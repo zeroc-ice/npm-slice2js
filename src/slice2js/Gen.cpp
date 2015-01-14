@@ -1,6 +1,6 @@
 // **********************************************************************
 //
-// Copyright (c) 2003-2014 ZeroC, Inc. All rights reserved.
+// Copyright (c) 2003-2015 ZeroC, Inc. All rights reserved.
 //
 // This copy of Ice is licensed to you under the terms described in the
 // ICE_LICENSE file included in this distribution.
@@ -582,14 +582,14 @@ Slice::Gen::Gen(const string& base, const vector<string>& includePaths, const st
     {
         _fileBase = base.substr(pos + 1);
     }
-    
+
     string file = _fileBase + ".js";
 
     if(!dir.empty())
     {
         file = dir + '/' + file;
     }
-    
+
     _out.open(file.c_str());
     if(!_out)
     {
@@ -599,7 +599,7 @@ Slice::Gen::Gen(const string& base, const vector<string>& includePaths, const st
     }
     FileTracker::instance()->addFile(file);
 
-    
+
     printHeader();
     printGeneratedHeader(_out, _fileBase + ".ice");
 }
@@ -616,7 +616,7 @@ Slice::Gen::Gen(const string& base, const vector<string>& includePaths, const st
     {
         _fileBase = base.substr(pos + 1);
     }
-    
+
     printHeader();
     printGeneratedHeader(_out, _fileBase + ".ice");
 }
@@ -691,7 +691,7 @@ Slice::Gen::printHeader()
     static const char* header =
 "// **********************************************************************\n"
 "//\n"
-"// Copyright (c) 2003-2014 ZeroC, Inc. All rights reserved.\n"
+"// Copyright (c) 2003-2015 ZeroC, Inc. All rights reserved.\n"
 "//\n"
 "// This copy of Ice is licensed to you under the terms described in the\n"
 "// ICE_LICENSE file included in this distribution.\n"
@@ -855,7 +855,7 @@ Slice::Gen::RequireVisitor::writeRequires(const UnitPtr& p)
     else
     {
         requires["Ice"] = vector<string>();
-        requires["Ice"].push_back("icejs");
+        requires["Ice"].push_back("zeroc-icejs");
     }
 
     StringList includes = p->includeFiles();
@@ -869,7 +869,7 @@ Slice::Gen::RequireVisitor::writeRequires(const UnitPtr& p)
                 if(requires.find(*j) == requires.end())
                 {
                     requires[*j] = vector<string>();
-                    requires[*j].push_back("icejs");
+                    requires[*j].push_back("zeroc-icejs");
                 }
             }
             else
@@ -892,7 +892,7 @@ Slice::Gen::RequireVisitor::writeRequires(const UnitPtr& p)
 
     if(!_icejs)
     {
-        _out << nl << "var Ice = require(\"icejs\").Ice;";
+        _out << nl << "var Ice = require(\"zeroc-icejs\").Ice;";
         _out << nl << "var __M = Ice.__M;";
     }
     else
