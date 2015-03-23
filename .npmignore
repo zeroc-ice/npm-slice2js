@@ -1,0 +1,14 @@
+ice/*
+
+!ice/cpp/src/slice2js
+!ice/cpp/src/IceUtil
+!ice/cpp/src/Slice
+
+!ice/cpp/include/IceUtil
+!ice/cpp/include/Slice
+
+!ice/slice/Ice
+!ice/slice/IceGrid
+!ice/slice/Glacier2
+!ice/slice/IceStorm
+!ice/slice/IceSSL

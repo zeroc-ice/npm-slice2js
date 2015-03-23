@@ -33,13 +33,13 @@
         },
       },
       'sources':  [
-        'src/slice2js/Gen.cpp',
-        'src/slice2js/JsUtil.cpp',
-        'src/slice2js/Main.cpp'
+        'ice/cpp/src/slice2js/Gen.cpp',
+        'ice/cpp/src/slice2js/JsUtil.cpp',
+        'ice/cpp/src/slice2js/Main.cpp'
       ],
       'include_dirs' : [
-          'include',
-          'src/slice2js'
+          'ice/cpp/include',
+          'ice/cpp/src/slice2js'
       ],
       'cflags_cc' : [
         '-fexceptions'
@@ -81,26 +81,26 @@
         }
       },
       'sources':  [
-        'src/Slice/CPlusPlusUtil.cpp',
-        'src/Slice/DotNetNames.cpp',
-        'src/Slice/JavaUtil.cpp',
-        'src/Slice/PHPUtil.cpp',
-        'src/Slice/PythonUtil.cpp',
-        'src/Slice/Util.cpp',
-        'src/Slice/Checksum.cpp',
-        'src/Slice/FileTracker.cpp',
-        'src/Slice/MD5.cpp',
-        'src/Slice/Parser.cpp',
-        'src/Slice/RubyUtil.cpp',
-        'src/Slice/CsUtil.cpp',
-        'src/Slice/Grammar.cpp',
-        'src/Slice/MD5I.cpp',
-        'src/Slice/Preprocessor.cpp',
-        'src/Slice/Scanner.cpp'
+        'ice/cpp/src/Slice/CPlusPlusUtil.cpp',
+        'ice/cpp/src/Slice/DotNetNames.cpp',
+        'ice/cpp/src/Slice/JavaUtil.cpp',
+        'ice/cpp/src/Slice/PHPUtil.cpp',
+        'ice/cpp/src/Slice/PythonUtil.cpp',
+        'ice/cpp/src/Slice/Util.cpp',
+        'ice/cpp/src/Slice/Checksum.cpp',
+        'ice/cpp/src/Slice/FileTracker.cpp',
+        'ice/cpp/src/Slice/MD5.cpp',
+        'ice/cpp/src/Slice/Parser.cpp',
+        'ice/cpp/src/Slice/RubyUtil.cpp',
+        'ice/cpp/src/Slice/CsUtil.cpp',
+        'ice/cpp/src/Slice/Grammar.cpp',
+        'ice/cpp/src/Slice/MD5I.cpp',
+        'ice/cpp/src/Slice/Preprocessor.cpp',
+        'ice/cpp/src/Slice/Scanner.cpp'
       ],
       'include_dirs' : [
-          'include',
-          'src'
+          'ice/cpp/include',
+          'ice/cpp/src'
       ],
       'cflags_cc' : [
         '-fexceptions'
@@ -132,33 +132,33 @@
         },
       },
       'sources':  [
-        'src/IceUtil/ArgVector.cpp',
-        'src/IceUtil/Cond.cpp',
-        'src/IceUtil/ConvertUTF.cpp',
-        'src/IceUtil/CountDownLatch.cpp',
-        'src/IceUtil/CtrlCHandler.cpp',
-        'src/IceUtil/Exception.cpp',
-        'src/IceUtil/FileUtil.cpp',
-        'src/IceUtil/InputUtil.cpp',
-        'src/IceUtil/MutexProtocol.cpp',
-        'src/IceUtil/Options.cpp',
-        'src/IceUtil/OutputUtil.cpp',
-        'src/IceUtil/Random.cpp',
-        'src/IceUtil/RecMutex.cpp',
-        'src/IceUtil/SHA1.cpp',
-        'src/IceUtil/Shared.cpp',
-        'src/IceUtil/StringConverter.cpp',
-        'src/IceUtil/StringUtil.cpp',
-        'src/IceUtil/Thread.cpp',
-        'src/IceUtil/ThreadException.cpp',
-        'src/IceUtil/Time.cpp',
-        'src/IceUtil/Timer.cpp',
-        'src/IceUtil/Unicode.cpp',
-        'src/IceUtil/UUID.cpp'
+        'ice/cpp/src/IceUtil/ArgVector.cpp',
+        'ice/cpp/src/IceUtil/Cond.cpp',
+        'ice/cpp/src/IceUtil/ConvertUTF.cpp',
+        'ice/cpp/src/IceUtil/CountDownLatch.cpp',
+        'ice/cpp/src/IceUtil/CtrlCHandler.cpp',
+        'ice/cpp/src/IceUtil/Exception.cpp',
+        'ice/cpp/src/IceUtil/FileUtil.cpp',
+        'ice/cpp/src/IceUtil/InputUtil.cpp',
+        'ice/cpp/src/IceUtil/MutexProtocol.cpp',
+        'ice/cpp/src/IceUtil/Options.cpp',
+        'ice/cpp/src/IceUtil/OutputUtil.cpp',
+        'ice/cpp/src/IceUtil/Random.cpp',
+        'ice/cpp/src/IceUtil/RecMutex.cpp',
+        'ice/cpp/src/IceUtil/SHA1.cpp',
+        'ice/cpp/src/IceUtil/Shared.cpp',
+        'ice/cpp/src/IceUtil/StringConverter.cpp',
+        'ice/cpp/src/IceUtil/StringUtil.cpp',
+        'ice/cpp/src/IceUtil/Thread.cpp',
+        'ice/cpp/src/IceUtil/ThreadException.cpp',
+        'ice/cpp/src/IceUtil/Time.cpp',
+        'ice/cpp/src/IceUtil/Timer.cpp',
+        'ice/cpp/src/IceUtil/Unicode.cpp',
+        'ice/cpp/src/IceUtil/UUID.cpp'
       ],
       'include_dirs' : [
-          "src",
-          "include",
+          "ice/cpp/src",
+          "ice/cpp/include",
       ],
       'cflags_cc' : [
         '-fexceptions'
