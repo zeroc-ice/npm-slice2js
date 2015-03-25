@@ -11,7 +11,7 @@ _See below for command line usage._
 ## Usage
 ```js
 var slice2js = require('zeroc-slice2js');
-slice2js(["Hello.ice"]);
+slice2js.compile(["Hello.ice"]);
 ```
 
 _The zeroc-slice2js module includes all of the Ice Slice definitions and automatically adds the slice directory to the include file search path._
