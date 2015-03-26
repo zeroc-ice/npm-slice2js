@@ -52,4 +52,4 @@ $ slice2js Hello.ice
 
 ## Gulp
 
-For gulp integration refer to the [gulp-zeroc-slice2js package](https://github.com/ZeroC-Inc/gulp-zeroc-slice2js).
+For gulp integration refer to the [gulp-zeroc-slice2js package](https://github.com/ZeroC-Inc/npm-gulp-slice2js).

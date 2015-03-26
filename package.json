@@ -11,7 +11,7 @@
     "slice2js": "bin/slice2js-cli.js"
   },
   "scripts": {
-    "test": "slice2js --version"
+    "test": "test/test.js"
   },
   "keywords": [
     "Ice",

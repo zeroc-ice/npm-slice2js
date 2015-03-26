@@ -52,6 +52,11 @@
           'libraries': [
             '-lrpcrt4.lib', '-ladvapi32.lib', '-lDbgHelp.lib'
           ]
+        }],
+        ['OS=="linux"', {
+          'libraries': [
+            '-lrt', '-lcrypto'
+          ]
         }]
       ],
       'xcode_settings': {
@@ -161,7 +166,7 @@
           "ice/cpp/include",
       ],
       'cflags_cc' : [
-        '-fexceptions'
+        '-fexceptions',
       ],
       'cflags_cc!' : [
         '-fno-rtti'
