@@ -1,3 +1,5 @@
+[![Build Status](https://magnum.travis-ci.com/ZeroC-Inc/npm-slice2js.svg?token=icxd1yE9Nf6WLivZz2vF&branch=master)](https://magnum.travis-ci.com/ZeroC-Inc/npm-slice2js)
+
 # zeroc-slice2js
 Compiles Slice files to Javascript.
 
