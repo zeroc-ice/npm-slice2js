@@ -1,6 +1,6 @@
 [submodule "ice"]
 	path = ice
-	url = https://github.com/ZeroC-Inc/ice-dev
+	url = https://github.com/zeroc-ice/ice-dev
 [submodule "mcpp"]
 	path = mcpp
-	url = https://github.com/ZeroC-Inc/mcpp
+	url = https://github.com/zeroc-ice/mcpp
