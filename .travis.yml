@@ -1,12 +1,13 @@
 git:
   submodules: false
 before_install:
-  - echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
-  - git submodule update --init --recursive
+- echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
+- git submodule update --init --recursive
 language: node_js
 node_js:
-  - "0.10"
-  - "0.12"
-  - "iojs"
+- '0.10'
+- '0.12'
+- iojs
 notifications:
-  email: travis-ci@zeroc.com
+  slack:
+    secure: FFxjEosYliKIzwIWOfv04sr+EbjKEfDqER7/ctZ9r++1NpyL4taEhJyqgcWeCFQOoj1SemG3YFmkP8lj45JrAoAV47ZVIo7l6PV165dU4/tWUHb+tIniyWY14u9yk3OIaU//CQtdwdD88zvc64xx1JR+8XPSjQ6XPCC8DSvmrF8=
