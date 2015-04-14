@@ -1,22 +1,22 @@
 [![Build Status](https://magnum.travis-ci.com/ZeroC-Inc/npm-slice2js.svg?token=icxd1yE9Nf6WLivZz2vF&branch=master)](https://magnum.travis-ci.com/ZeroC-Inc/npm-slice2js)
 
-# zeroc-slice2js
+# slice2js
 Compiles Slice files to Javascript.
 
 ## Install
 ```bash
-$ npm install zeroc-slice2js --save-dev
+$ npm install slice2js --save-dev
 ```
 
 _See below for command line usage._
 
 ## Usage
 ```js
-var slice2js = require('zeroc-slice2js');
+var slice2js = require('slice2js');
 slice2js.compile(["Hello.ice"]);
 ```
 
-_The zeroc-slice2js module includes all of the Ice Slice definitions and automatically adds the slice directory to the include file search path._
+_The slice2js module includes all of the Ice Slice definitions and automatically adds the slice directory to the include file search path._
 
 ## Options
 
@@ -48,10 +48,10 @@ Additional documentation can be found [here](https://doc.zeroc.com/display/Ice36
 Slice2js can also be installed globally and used from the command line.
 
 ```bash
-$ npm install -g zeroc-slice2js
+$ npm install -g slice2js
 $ slice2js Hello.ice
 ```
 
 ## Gulp
 
-For gulp integration refer to the [gulp-zeroc-slice2js package](https://github.com/ZeroC-Inc/npm-gulp-slice2js).
+For gulp integration refer to the [gulp-ice-builder package](https://github.com/zeroc-ice/gulp-ice-builder).
