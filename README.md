@@ -1,48 +1,74 @@
-[![Build Status](https://magnum.travis-ci.com/ZeroC-Inc/npm-slice2js.svg?token=icxd1yE9Nf6WLivZz2vF&branch=master)](https://magnum.travis-ci.com/ZeroC-Inc/npm-slice2js)
-
 # slice2js
-Compiles Slice files to Javascript.
+Compiles Slice files to JavaScript.
 
-## Install
+# Install
 ```bash
 $ npm install slice2js --save-dev
 ```
 
-_See below for command line usage._
-
-## Usage
+# Usage
 ```js
 var slice2js = require('slice2js');
-slice2js.compile(["Hello.ice"]);
 ```
 
-_The slice2js module includes all of the Ice Slice definitions and automatically adds the slice directory to the include file search path._
+## Methods
 
-## Options
+### `slice2js.compile(args [, options])`
+* Returns a [ChildProcess](https://nodejs.org/api/child_process.html#child_process_class_childprocess) object.
 
-### args `Array`
+#### args `Array`
+List of arguments passed to the `slice2js` compiler.
 
-The list of arguments passed to slice2js
-
-```bash
--h, --help              Show this message.
--v, --version           Display the Ice version.
--DNAME                  Define NAME as 1.
--DNAME=DEF              Define NAME as DEF.
--UNAME                  Remove any definition for NAME.
--IDIR                   Put DIR in the include file search path.
--E                      Print preprocessor output on stdout.
---stdout                Print genreated code to stdout.
---output-dir DIR        Create files in the directory DIR.
---depend                Generate Makefile dependencies.
---depend-json           Generate Makefile dependencies in JSON format.
--d, --debug             Print debug messages.
---ice                   Permit `Ice` prefix (for building Ice source code only).
---underscore            Permit underscores in Slice identifiers.
---icejs                 Build icejs module
-```
+| Option              | Description                                                  |
+| ------------------- | ------------------------------------------------------------ |
+| -h                  | Show usage information.                                      |
+| -v, --version       | Display the Ice version.                                     |
+| -DNAME              | Define NAME as 1.                                            |
+| -DNAME=DEF          | Define NAME as DEF.                                          |
+| -UNAME              | Remove any definition for NAME.                              |
+| -IDIR               | Add DIR to the include path for Slice files.                 |
+| -E                  | Print preprocessor output on stdout.                         |
+| --stdout            | Print generated code to stdout.                              |
+| --output-dir DIR    | Create files in the directory DIR.                           |
+| --depend            | Print dependency information for Slice files.                |
+| --depend-json       | Print dependency information for Slice files in JSON format. |
+| --depend-xml        | Print dependency information for Slice files in XML format.  |
+| --depend-file FILE  | Write dependencies to FILE instead of standard output.       |
+| -d, --debug         | Print debug messages.                                        |
+| --ice               | Permit `Ice` prefix (for building Ice source code only).     |
+| --underscore        | Permit underscores in Slice identifiers.                     |
+| --icejs             | Build icejs module                                           |
 
 Additional documentation can be found [here](https://doc.zeroc.com/display/Ice36/slice2js+Command-Line+Options).
+
+The `slice2js` module includes all the Ice Slice files and adds these files to the include file search path.
+
+#### options `Object`
+Object `options` is passed directly to [child_process.spawn(command[, args][, options])](https://nodejs.org/api/child_processhtml#child_process_child_process_spawn_command_args_options) as the options parameter. This can be used to control things such has stdio, environemnt, and working directory.
+
+```js
+var slice2js = require('slice2js');
+slice2js.compile(['Hello.ice'], { stdio: 'inherit' })
+```
+
+### `slice2js.sliceDir`
+Returns the absolute path of the included Ice Slice files.
+
+## Example
+```js
+var slice2js = require('slice2js');
+slice2js.compile(['Hello.ice']).on('close', function (code)
+{
+    if(code !== 0)
+    {
+      console.log('slice2js exited with code ' + code);
+    }
+    else
+    {
+      console.log('slice2js finished successfully');
+    }
+});
+```
 
 ## Command Line
 Slice2js can also be installed globally and used from the command line.
@@ -52,6 +78,5 @@ $ npm install -g slice2js
 $ slice2js Hello.ice
 ```
 
-## Gulp
-
+# Gulp
 For gulp integration refer to the [gulp-ice-builder package](https://github.com/zeroc-ice/gulp-ice-builder).
