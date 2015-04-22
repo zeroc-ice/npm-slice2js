@@ -1,4 +1,11 @@
+.gitmodules
+.travis.yml
+build
+
 ice/*
+ice/cpp/*
+ice/cpp/src/*
+ice/cpp/include/*
 
 !ice/cpp/src/slice2js
 !ice/cpp/src/IceUtil
