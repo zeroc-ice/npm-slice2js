@@ -7,5 +7,5 @@
 
 'use strict';
 
-var slice2js = require('../slice2js');
-slice2js.compile(process.argv.slice(2), {stdio: 'inherit'}).on('exit', process.exit);
+var compile = require('../index').compile;
+compile(process.argv.slice(2), {stdio: 'inherit'}).on('exit', process.exit);

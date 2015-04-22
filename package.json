@@ -6,7 +6,7 @@
   "repository": "https://github.com/zeroc-ice/npm-slice2js.git",
   "author": "Zeroc, Inc.",
   "license": "GPL-2.0",
-  "main": "slice2js.js",
+  "main": "index.js",
   "bin": {
     "slice2js": "bin/slice2js-cli.js"
   },
@@ -15,7 +15,6 @@
   },
   "keywords": [
     "Ice",
-    "IceJS",
     "slice2js"
   ],
   "gypfile": true
