@@ -1,22 +1,22 @@
 # slice2js
 Compiles Slice files to JavaScript.
 
-# Install
+## Install
 ```bash
 $ npm install slice2js --save-dev
 ```
 
-# Usage
+## Usage
 ```js
 var slice2js = require('slice2js');
 ```
 
-## Methods
+### Methods
 
-### `slice2js.compile(args [, options])`
+#### `slice2js.compile(args [, options])`
 * Returns a [ChildProcess](https://nodejs.org/api/child_process.html#child_process_class_childprocess) object.
 
-#### args `Array`
+##### args `Array`
 List of arguments passed to the `slice2js` compiler.
 
 | Option              | Description                                                  |
@@ -43,7 +43,7 @@ Additional documentation can be found [here](https://doc.zeroc.com/display/Ice36
 
 The `slice2js` module includes all the Ice Slice files and adds these files to the include file search path.
 
-#### options `Object`
+##### options `Object`
 Object `options` is passed directly to [child_process.spawn(command[, args][, options])](https://nodejs.org/api/child_processhtml#child_process_child_process_spawn_command_args_options) as the options parameter. This can be used to control things such has stdio, environemnt, and working directory.
 
 ```js
@@ -51,10 +51,10 @@ var slice2js = require('slice2js');
 slice2js.compile(['Hello.ice'], { stdio: 'inherit' })
 ```
 
-### `slice2js.sliceDir`
+#### `slice2js.sliceDir`
 Returns the absolute path of the included Ice Slice files.
 
-## Example
+### Example
 ```js
 var slice2js = require('slice2js');
 slice2js.compile(['Hello.ice']).on('close', function (code)
@@ -70,7 +70,7 @@ slice2js.compile(['Hello.ice']).on('close', function (code)
 });
 ```
 
-## Command Line
+### Command Line
 Slice2js can also be installed globally and used from the command line.
 
 ```bash
@@ -78,5 +78,5 @@ $ npm install -g slice2js
 $ slice2js Hello.ice
 ```
 
-# Gulp
+## Gulp
 For gulp integration refer to the [gulp-ice-builder package](https://github.com/zeroc-ice/gulp-ice-builder).
