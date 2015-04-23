@@ -37,7 +37,6 @@ List of arguments passed to the `slice2js` compiler.
 | -d, --debug         | Print debug messages.                                        |
 | --ice               | Permit `Ice` prefix (for building Ice source code only).     |
 | --underscore        | Permit underscores in Slice identifiers.                     |
-| --icejs             | Build icejs module                                           |
 
 Additional documentation can be found [here](https://doc.zeroc.com/display/Ice36/slice2js+Command-Line+Options).
 
