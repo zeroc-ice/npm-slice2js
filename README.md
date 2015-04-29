@@ -35,8 +35,8 @@ List of arguments passed to the `slice2js` compiler.
 | --depend-xml        | Print dependency information for Slice files in XML format.  |
 | --depend-file FILE  | Write dependencies to FILE instead of standard output.       |
 | -d, --debug         | Print debug messages.                                        |
-| --ice               | Permit `Ice` prefix (for building Ice source code only).     |
-| --underscore        | Permit underscores in Slice identifiers.                     |
+| --ice               | Allow reserved Ice prefix in Slice identifiers.              |
+| --underscore        | Allow underscores in Slice identifiers.                      |
 
 Additional documentation can be found [here](https://doc.zeroc.com/display/Ice36/slice2js+Command-Line+Options).
 
