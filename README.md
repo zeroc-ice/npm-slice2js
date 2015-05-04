@@ -43,7 +43,7 @@ Additional documentation can be found [here](https://doc.zeroc.com/display/Ice36
 The `slice2js` module includes all the Ice Slice files and adds these files to the include file search path.
 
 ##### options `Object`
-Object `options` is passed directly to [child_process.spawn(command[, args][, options])](https://nodejs.org/api/child_processhtml#child_process_child_process_spawn_command_args_options) as the options parameter. This can be used to control things such has stdio, environemnt, and working directory.
+Object `options` is passed directly to [child_process.spawn(command[, args][, options])](https://nodejs.org/api/child_processhtml#child_process_child_process_spawn_command_args_options) as the options parameter. This can be used to control things such as stdio, environment, and working directory.
 
 ```js
 var slice2js = require('slice2js');
