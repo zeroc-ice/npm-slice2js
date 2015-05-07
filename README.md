@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/zeroc-ice/npm-slice2js.svg)](https://travis-ci.org/zeroc-ice/npm-slice2js)
+
 # slice2js
 Compiles Slice files to JavaScript.
 
