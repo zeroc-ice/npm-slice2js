@@ -1,14 +1,15 @@
 {
   'target_defaults': {
-    'defines': [
-      'ICE_STATIC_LIBS',
-      'SLICE_API_EXPORTS',
+    'defines' : [
+      'ICE_STATIC_LIBS'
     ],
     'conditions': [
       ['OS=="win"', {
         'msvs_disabled_warnings': [
-          4273,  # inconsistent dll linkage
-          4250
+          4250,
+          4251,
+          4275,
+          4995
         ],
       }]
     ]
@@ -85,6 +86,9 @@
           }
         }
       },
+      'defines': [
+        'ICE_BUILDING_SLICE',
+      ],
       'sources':  [
         'ice/cpp/src/Slice/CPlusPlusUtil.cpp',
         'ice/cpp/src/Slice/DotNetNames.cpp',
@@ -136,6 +140,9 @@
           },
         },
       },
+      'defines': [
+        'ICE_BUILDING_ICE_UTIL',
+      ],
       'sources':  [
         'ice/cpp/src/IceUtil/ArgVector.cpp',
         'ice/cpp/src/IceUtil/Cond.cpp',
