@@ -40,7 +40,7 @@ List of arguments passed to the `slice2js` compiler.
 | --ice               | Allow reserved Ice prefix in Slice identifiers.              |
 | --underscore        | Allow underscores in Slice identifiers.                      |
 
-Additional documentation can be found [here](https://doc.zeroc.com/display/Ice36/slice2js+Command-Line+Options).
+Additional documentation can be found [here](https://doc.zeroc.com/display/Ice37/slice2js+Command-Line+Options).
 
 The `slice2js` module includes all the Ice Slice files and adds these files to the include file search path.
 
