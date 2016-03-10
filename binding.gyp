@@ -40,6 +40,7 @@
       ],
       'include_dirs' : [
           'ice/cpp/include',
+          'ice/cpp/src/',
           'ice/cpp/src/slice2js'
       ],
       'cflags_cc' : [
