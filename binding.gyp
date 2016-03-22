@@ -52,7 +52,7 @@
       'conditions': [
         ['OS=="win"', {
           'libraries': [
-            '-lrpcrt4.lib', '-ladvapi32.lib', '-lDbgHelp.lib'
+            '-lrpcrt4.lib', '-ladvapi32.lib', '-lDbgHelp.lib', '-lShlwapi.lib'
           ]
         }],
         ['OS=="linux"', {
