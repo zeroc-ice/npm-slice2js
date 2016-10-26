@@ -91,15 +91,16 @@
         'ICE_BUILDING_SLICE',
       ],
       'sources':  [
-        'ice/cpp/src/Slice/SliceUtil.cpp',
         'ice/cpp/src/Slice/Checksum.cpp',
         'ice/cpp/src/Slice/FileTracker.cpp',
-        'ice/cpp/src/Slice/MD5.cpp',
-        'ice/cpp/src/Slice/Parser.cpp',
         'ice/cpp/src/Slice/Grammar.cpp',
+        'ice/cpp/src/Slice/MD5.cpp',
         'ice/cpp/src/Slice/MD5I.cpp',
+        'ice/cpp/src/Slice/Parser.cpp',
         'ice/cpp/src/Slice/Preprocessor.cpp',
-        'ice/cpp/src/Slice/Scanner.cpp'
+        'ice/cpp/src/Slice/Scanner.cpp',
+        'ice/cpp/src/Slice/SliceUtil.cpp',
+        'ice/cpp/src/Slice/StringLiteralUtil.cpp'
       ],
       'include_dirs' : [
           'ice/cpp/include',
