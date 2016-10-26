@@ -1,7 +1,8 @@
 {
   'target_defaults': {
     'defines' : [
-      'ICE_STATIC_LIBS'
+      'ICE_STATIC_LIBS',
+      'ICE_BUILDING_SLICE_COMPILERS'
     ],
     'conditions': [
       ['OS=="win"', {
@@ -52,7 +53,7 @@
       'conditions': [
         ['OS=="win"', {
           'libraries': [
-            '-lrpcrt4.lib', '-ladvapi32.lib', '-lDbgHelp.lib'
+            '-lrpcrt4.lib', '-ladvapi32.lib', '-lDbgHelp.lib', '-lShlwapi.lib'
           ]
         }],
         ['OS=="linux"', {
@@ -87,9 +88,6 @@
           }
         }
       },
-      'defines': [
-        'ICE_BUILDING_SLICE',
-      ],
       'sources':  [
         'ice/cpp/src/Slice/Checksum.cpp',
         'ice/cpp/src/Slice/FileTracker.cpp',
@@ -135,9 +133,6 @@
           },
         },
       },
-      'defines': [
-        'ICE_BUILDING_ICE_UTIL',
-      ],
       'sources':  [
         'ice/cpp/src/IceUtil/ConvertUTF.cpp',
         'ice/cpp/src/IceUtil/CtrlCHandler.cpp',
