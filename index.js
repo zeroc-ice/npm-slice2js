@@ -11,8 +11,8 @@ var platform  = os.platform();
 var arch      = os.arch();
 
 var sliceDir = path.resolve(path.join(__dirname, 'ice', 'slice'));
-var slice2js = path.join(path.join(__dirname, 'build', 'Release'),
-                                   platform === 'win32' ? 'slice2js.exe' : 'slice2js');
+var slice2js = path.resolve(path.join(path.join(__dirname, 'build', 'Release'),
+                                   platform === 'win32' ? 'slice2js.exe' : 'slice2js'));
 
 function compile(args, options)
 {
@@ -24,3 +24,4 @@ function compile(args, options)
 
 module.exports.compile  = compile;
 module.exports.sliceDir = sliceDir;
+module.exports.slice2js = slice2js;
