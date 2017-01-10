@@ -135,6 +135,7 @@
       },
       'sources':  [
         'ice/cpp/src/IceUtil/ConvertUTF.cpp',
+        'ice/cpp/src/IceUtil/ConsoleUtil.cpp',
         'ice/cpp/src/IceUtil/CtrlCHandler.cpp',
         'ice/cpp/src/IceUtil/FileUtil.cpp',
         'ice/cpp/src/IceUtil/InputUtil.cpp',
