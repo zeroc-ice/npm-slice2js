@@ -1,6 +1,5 @@
 {
   'target_defaults': {
-    'win_delay_load_hook' : 'false',
     'defines' : [
       'ICE_STATIC_LIBS',
       'ICE_BUILDING_SLICE_COMPILERS'
@@ -40,6 +39,7 @@
         'ice/cpp/src/slice2js/JsUtil.cpp',
         'ice/cpp/src/slice2js/Main.cpp'
       ],
+      'win_delay_load_hook' : 'false',
       'include_dirs' : [
           'ice/cpp/include',
           'ice/cpp/src/',
@@ -101,6 +101,7 @@
         'ice/cpp/src/Slice/SliceUtil.cpp',
         'ice/cpp/src/Slice/StringLiteralUtil.cpp'
       ],
+      'win_delay_load_hook' : 'false',
       'include_dirs' : [
           'ice/cpp/include',
           'ice/cpp/src'
@@ -124,7 +125,6 @@
       'configurations': {
         'Release': {
           'msvs_settings': {
-
             'VCCLCompilerTool': {
                 'RuntimeLibrary': '2',
                 'ExceptionHandling': '1',
@@ -154,6 +154,7 @@
         'ice/cpp/src/IceUtil/UUID.cpp',
         'ice/cpp/src/IceUtil/UtilException.cpp',
       ],
+      'win_delay_load_hook' : 'false',
       'include_dirs' : [
           "ice/cpp/src",
           "ice/cpp/include",
