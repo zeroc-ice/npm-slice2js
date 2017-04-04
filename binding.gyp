@@ -1,5 +1,6 @@
 {
   'target_defaults': {
+    'win_delay_load_hook' : 'false',
     'defines' : [
       'ICE_STATIC_LIBS',
       'ICE_BUILDING_SLICE_COMPILERS'
