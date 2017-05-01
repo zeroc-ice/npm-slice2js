@@ -26,7 +26,17 @@
         'Release': {
           'msvs_settings': {
             'VCCLCompilerTool': {
-                'RuntimeLibrary': '2',
+                'RuntimeLibrary': '0',
+                'ExceptionHandling': '1',
+                'RuntimeTypeInfo' : 'true',
+                'WarnAsError' : 'true'
+              },
+          },
+        },
+        'Debug': {
+          'msvs_settings': {
+            'VCCLCompilerTool': {
+                'RuntimeLibrary': '1',
                 'ExceptionHandling': '1',
                 'RuntimeTypeInfo' : 'true',
                 'WarnAsError' : 'true'
@@ -81,13 +91,23 @@
         'Release': {
           'msvs_settings': {
             'VCCLCompilerTool': {
-                'RuntimeLibrary': '2',
+                'RuntimeLibrary': '0',
                 'ExceptionHandling': '1',
                 'RuntimeTypeInfo' : 'true',
                 'WarnAsError' : 'true'
-              }
-          }
-        }
+              },
+          },
+        },
+        'Debug': {
+          'msvs_settings': {
+            'VCCLCompilerTool': {
+                'RuntimeLibrary': '1',
+                'ExceptionHandling': '1',
+                'RuntimeTypeInfo' : 'true',
+                'WarnAsError' : 'true'
+              },
+          },
+        },
       },
       'sources':  [
         'ice/cpp/src/Slice/Checksum.cpp',
@@ -126,7 +146,17 @@
         'Release': {
           'msvs_settings': {
             'VCCLCompilerTool': {
-                'RuntimeLibrary': '2',
+                'RuntimeLibrary': '0',
+                'ExceptionHandling': '1',
+                'RuntimeTypeInfo' : 'true',
+                'WarnAsError' : 'true'
+              },
+          },
+        },
+        'Debug': {
+          'msvs_settings': {
+            'VCCLCompilerTool': {
+                'RuntimeLibrary': '1',
                 'ExceptionHandling': '1',
                 'RuntimeTypeInfo' : 'true',
                 'WarnAsError' : 'true'
