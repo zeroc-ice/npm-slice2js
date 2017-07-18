@@ -5,7 +5,7 @@ Compiles Slice files to JavaScript.
 
 ## Install
 ```bash
-$ npm install slice2js --save-dev
+npm install slice2js --save-dev
 ```
 
 ## Usage
@@ -37,8 +37,6 @@ List of arguments passed to the `slice2js` compiler.
 | --depend-xml        | Print dependency information for Slice files in XML format.  |
 | --depend-file FILE  | Write dependencies to FILE instead of standard output.       |
 | -d, --debug         | Print debug messages.                                        |
-| --ice               | Allow reserved Ice prefix in Slice identifiers.              |
-| --underscore        | Allow underscores in Slice identifiers.                      |
 
 Additional documentation can be found [here](https://doc.zeroc.com/display/Ice37/slice2js+Command-Line+Options).
 
@@ -75,8 +73,8 @@ slice2js.compile(['Hello.ice']).on('close', function (code)
 Slice2js can also be installed globally and used from the command line.
 
 ```bash
-$ npm install -g slice2js
-$ slice2js Hello.ice
+npm install -g slice2js
+slice2js Hello.ice
 ```
 
 ## Gulp
