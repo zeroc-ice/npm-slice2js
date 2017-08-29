@@ -38,6 +38,7 @@
         'ice/cpp/src/slice2js/JsUtil.cpp',
         'ice/cpp/src/slice2js/Main.cpp'
       ],
+      'win_delay_load_hook' : 'false',
       'include_dirs' : [
           'ice/cpp/include',
           'ice/cpp/src/',
@@ -108,6 +109,7 @@
         'ice/cpp/src/Slice/Preprocessor.cpp',
         'ice/cpp/src/Slice/Scanner.cpp'
       ],
+      'win_delay_load_hook' : 'false',
       'include_dirs' : [
           'ice/cpp/include',
           'ice/cpp/src'
@@ -169,6 +171,7 @@
         'ice/cpp/src/IceUtil/Unicode.cpp',
         'ice/cpp/src/IceUtil/UUID.cpp'
       ],
+      'win_delay_load_hook' : 'false',
       'include_dirs' : [
           "ice/cpp/src",
           "ice/cpp/include",
