@@ -65,7 +65,8 @@
         ['OS=="win"', {
           'libraries': [
             '-lrpcrt4.lib', '-ladvapi32.lib', '-lDbgHelp.lib', '-lShlwapi.lib'
-          ]
+          ],
+          'libraries!': ['-l"<(node_lib_file)"']
         }],
         ['OS=="linux"', {
           'libraries': [
