@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/zeroc-ice/npm-slice2js.svg)](https://travis-ci.org/zeroc-ice/npm-slice2js)
+[![Build status](https://ci.appveyor.com/api/projects/status/fh4mgtodjogvrigp/branch/master?svg=true)](https://ci.appveyor.com/project/zeroc/npm-slice2js/branch/master)
 
 # slice2js
 Compiles Slice files to JavaScript.
