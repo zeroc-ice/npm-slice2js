@@ -1,0 +1,45 @@
+# scripts that are called at very beginning, before repo cloning
+init:
+    - git config --global core.autocrlf input
+
+# set clone depth, clone entire repository history if not defined
+clone_depth: 1
+
+# build version
+version: "{build}"
+
+# clone directory
+clone_folder: c:\projects\npm-slice2js
+
+# NodeJS versions to test
+environment:
+  matrix:
+      - nodejs_version: "6"
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
+       
+      - nodejs_version: "8"
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
+
+      - nodejs_version: "6"
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+       
+      - nodejs_version: "8"
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+
+      - nodejs_version: "6"
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+
+      - nodejs_version: "8"
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+
+install:
+    - git submodule update --init --recursive
+    - ps: Install-Product node $env:nodejs_version
+    - node --version
+    - npm --version
+    - npm install
+
+build: off
+
+test_script:
+    - npm test
