@@ -43,3 +43,9 @@ build: off
 
 test_script:
     - npm test
+
+notifications:
+    - provider: Slack
+      auth_token:
+          secure: L9I+bbHT46GkooHwElptGZuhEOcoE3D8DQw5nzbqQUQfeEApXHGFiGLwT5gCn36vMjjE3LlpuAGc7mQbH8Dy3YzrK+4058CWN8OKSRtGjeY=
+      channel: '#builds'
