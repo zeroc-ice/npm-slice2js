@@ -1,6 +1,6 @@
 {
   "name": "slice2js",
-  "version": "3.7.0",
+  "version": "3.7.1",
   "description": "Ice Slice to JavaScript compiler",
   "homepage": "https://zeroc.com",
   "repository": "https://github.com/zeroc-ice/npm-slice2js.git",
