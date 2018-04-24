@@ -1,6 +1,6 @@
 {
   'target_defaults': {
-    'defines' : [
+    'defines': [
       'ICE_STATIC_LIBS',
       'ICE_BUILDING_SLICE_COMPILERS'
     ],
@@ -20,7 +20,7 @@
     {
       'target_name': 'slice2js',
       'type': 'executable',
-      'dependencies' : ['slice', 'iceutil'],
+      'dependencies': ['slice', 'iceutil'],
 
       'configurations': {
         'Release': {
@@ -28,8 +28,8 @@
             'VCCLCompilerTool': {
                 'RuntimeLibrary': '0',
                 'ExceptionHandling': '1',
-                'RuntimeTypeInfo' : 'true',
-                'WarnAsError' : 'true'
+                'RuntimeTypeInfo': 'true',
+                'WarnAsError': 'true'
               },
           },
         },
@@ -38,8 +38,8 @@
             'VCCLCompilerTool': {
                 'RuntimeLibrary': '1',
                 'ExceptionHandling': '1',
-                'RuntimeTypeInfo' : 'true',
-                'WarnAsError' : 'true'
+                'RuntimeTypeInfo': 'true',
+                'WarnAsError': 'true'
               },
           },
         },
@@ -49,16 +49,16 @@
         'ice/cpp/src/slice2js/JsUtil.cpp',
         'ice/cpp/src/slice2js/Main.cpp'
       ],
-      'win_delay_load_hook' : 'false',
-      'include_dirs' : [
+      'win_delay_load_hook': 'false',
+      'include_dirs': [
           'ice/cpp/include',
           'ice/cpp/src/',
           'ice/cpp/src/slice2js'
       ],
-      'cflags_cc' : [
+      'cflags_cc': [
         '-fexceptions'
       ],
-      'cflags_cc!' : [
+      'cflags_cc!': [
         '-fno-rtti'
       ],
       'conditions': [
@@ -77,7 +77,7 @@
       'xcode_settings': {
         'GCC_ENABLE_CPP_RTTI': 'YES',
         "GCC_ENABLE_CPP_EXCEPTIONS": "YES",
-        "MACOSX_DEPLOYMENT_TARGET":"10.9"
+        "MACOSX_DEPLOYMENT_TARGET": "10.9"
       }
     },
 
@@ -94,8 +94,8 @@
             'VCCLCompilerTool': {
                 'RuntimeLibrary': '0',
                 'ExceptionHandling': '1',
-                'RuntimeTypeInfo' : 'true',
-                'WarnAsError' : 'true'
+                'RuntimeTypeInfo': 'true',
+                'WarnAsError': 'true'
               },
           },
         },
@@ -104,8 +104,8 @@
             'VCCLCompilerTool': {
                 'RuntimeLibrary': '1',
                 'ExceptionHandling': '1',
-                'RuntimeTypeInfo' : 'true',
-                'WarnAsError' : 'true'
+                'RuntimeTypeInfo': 'true',
+                'WarnAsError': 'true'
               },
           },
         },
@@ -122,21 +122,21 @@
         'ice/cpp/src/Slice/SliceUtil.cpp',
         'ice/cpp/src/Slice/StringLiteralUtil.cpp'
       ],
-      'win_delay_load_hook' : 'false',
-      'include_dirs' : [
+      'win_delay_load_hook': 'false',
+      'include_dirs': [
           'ice/cpp/include',
           'ice/cpp/src'
       ],
-      'cflags_cc' : [
+      'cflags_cc': [
         '-fexceptions'
       ],
-      'cflags_cc!' : [
+      'cflags_cc!': [
         '-fno-rtti'
       ],
       'xcode_settings': {
         'GCC_ENABLE_CPP_RTTI': 'YES',
         "GCC_ENABLE_CPP_EXCEPTIONS": "YES",
-        "MACOSX_DEPLOYMENT_TARGET":"10.9"
+        "MACOSX_DEPLOYMENT_TARGET": "10.9"
       }
     },
 
@@ -149,8 +149,8 @@
             'VCCLCompilerTool': {
                 'RuntimeLibrary': '0',
                 'ExceptionHandling': '1',
-                'RuntimeTypeInfo' : 'true',
-                'WarnAsError' : 'true'
+                'RuntimeTypeInfo': 'true',
+                'WarnAsError': 'true'
               },
           },
         },
@@ -159,8 +159,8 @@
             'VCCLCompilerTool': {
                 'RuntimeLibrary': '1',
                 'ExceptionHandling': '1',
-                'RuntimeTypeInfo' : 'true',
-                'WarnAsError' : 'true'
+                'RuntimeTypeInfo': 'true',
+                'WarnAsError': 'true'
               },
           },
         },
@@ -185,21 +185,21 @@
         'ice/cpp/src/IceUtil/UUID.cpp',
         'ice/cpp/src/IceUtil/UtilException.cpp',
       ],
-      'win_delay_load_hook' : 'false',
-      'include_dirs' : [
+      'win_delay_load_hook': 'false',
+      'include_dirs': [
           "ice/cpp/src",
           "ice/cpp/include",
       ],
-      'cflags_cc' : [
+      'cflags_cc': [
         '-fexceptions',
       ],
-      'cflags_cc!' : [
+      'cflags_cc!': [
         '-fno-rtti'
       ],
       'xcode_settings': {
         'GCC_ENABLE_CPP_RTTI': 'YES',
         "GCC_ENABLE_CPP_EXCEPTIONS": "YES",
-        "MACOSX_DEPLOYMENT_TARGET":"10.9"
+        "MACOSX_DEPLOYMENT_TARGET": "10.9"
       }
     }
   ]

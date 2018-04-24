@@ -1,7 +1,7 @@
 [submodule "ice"]
 	path = ice
 	url = https://github.com/zeroc-ice/ice.git
-	branch = master
+	branch = 3.7
 [submodule "mcpp"]
 	path = mcpp
 	url = https://github.com/zeroc-ice/mcpp.git
