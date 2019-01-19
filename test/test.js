@@ -1,9 +1,7 @@
 #!/usr/bin/env node
-// **********************************************************************
 //
-// Copyright (c) 2003-present ZeroC, Inc. All rights reserved.
+// Copyright (c) ZeroC, Inc. All rights reserved.
 //
-// **********************************************************************
 //
 
 var path     = require('path');

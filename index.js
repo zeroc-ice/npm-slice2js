@@ -1,8 +1,6 @@
-// **********************************************************************
 //
-// Copyright (c) 2003-present ZeroC, Inc. All rights reserved.
+// Copyright (c) ZeroC, Inc. All rights reserved.
 //
-// **********************************************************************
 
 var spawn     = require('child_process').spawn;
 var path      = require('path');
