@@ -15,12 +15,6 @@ clone_folder: c:\projects\npm-slice2js
 environment:
   matrix:
       - nodejs_version: "10"
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
-
-      - nodejs_version: "11"
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
-
-      - nodejs_version: "10"
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
 
       - nodejs_version: "11"
