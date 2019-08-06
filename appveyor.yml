@@ -17,13 +17,13 @@ environment:
       - nodejs_version: "10"
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
 
-      - nodejs_version: "11"
+      - nodejs_version: "12"
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
 
       - nodejs_version: "10"
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
 
-      - nodejs_version: "11"
+      - nodejs_version: "12"
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
 
 install:
