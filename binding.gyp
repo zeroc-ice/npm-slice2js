@@ -30,6 +30,11 @@
                 'RuntimeTypeInfo' : 'true',
                 'WarnAsError' : 'true'
               },
+              'VCLinkerTool': {
+                'AdditionalOptions': [
+                  '/LTCG:OFF',
+                ]
+              },
           },
         },
       },
