@@ -14,10 +14,10 @@ clone_folder: c:\projects\npm-slice2js
 # NodeJS versions to test
 environment:
   matrix:
-      - nodejs_version: "10"
+      - nodejs_version: "6"
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
        
-      - nodejs_version: "12"
+      - nodejs_version: "8"
         APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2013
 
       - nodejs_version: "10"
