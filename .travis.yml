@@ -1,22 +1,10 @@
 language: node_js
 node_js:
-- '0.10'
-- '0.12'
-- '4'
-- '5'
-- '6'
+- '10'
+- '12'
 
 git:
   submodules: false
-
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - g++-4.8
-env:
-  - CXX=g++-4.8
 
 before_install:
 - echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
