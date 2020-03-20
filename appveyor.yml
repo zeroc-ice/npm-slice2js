@@ -15,16 +15,10 @@ clone_folder: c:\projects\npm-slice2js
 environment:
   matrix:
       - nodejs_version: "10"
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
 
       - nodejs_version: "12"
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2015
-
-      - nodejs_version: "10"
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
-
-      - nodejs_version: "12"
-        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+        APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2019
 
 install:
     - git submodule update --init --recursive
