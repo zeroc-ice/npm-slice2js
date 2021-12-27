@@ -29,7 +29,8 @@
                 'RuntimeLibrary': '0',
                 'ExceptionHandling': '1',
                 'RuntimeTypeInfo': 'true',
-                'WarnAsError': 'true'
+                'WarnAsError': 'true',
+                'AdditionalOptions': [ '-std:c++14', ],
               },
           },
         },
@@ -39,7 +40,8 @@
                 'RuntimeLibrary': '1',
                 'ExceptionHandling': '1',
                 'RuntimeTypeInfo': 'true',
-                'WarnAsError': 'true'
+                'WarnAsError': 'true',
+                'AdditionalOptions': [ '-std:c++14', ],
               },
           },
         },
@@ -95,7 +97,8 @@
                 'RuntimeLibrary': '0',
                 'ExceptionHandling': '1',
                 'RuntimeTypeInfo': 'true',
-                'WarnAsError': 'true'
+                'WarnAsError': 'true',
+                'AdditionalOptions': [ '-std:c++14', ],
               },
           },
         },
@@ -105,7 +108,8 @@
                 'RuntimeLibrary': '1',
                 'ExceptionHandling': '1',
                 'RuntimeTypeInfo': 'true',
-                'WarnAsError': 'true'
+                'WarnAsError': 'true',
+                'AdditionalOptions': [ '-std:c++14', ],
               },
           },
         },
@@ -150,7 +154,8 @@
                 'RuntimeLibrary': '0',
                 'ExceptionHandling': '1',
                 'RuntimeTypeInfo': 'true',
-                'WarnAsError': 'true'
+                'WarnAsError': 'true',
+                'AdditionalOptions': [ '-std:c++14', ],
               },
           },
         },
@@ -160,7 +165,8 @@
                 'RuntimeLibrary': '1',
                 'ExceptionHandling': '1',
                 'RuntimeTypeInfo': 'true',
-                'WarnAsError': 'true'
+                'WarnAsError': 'true',
+                'AdditionalOptions': [ '-std:c++14', ],
               },
           },
         },
